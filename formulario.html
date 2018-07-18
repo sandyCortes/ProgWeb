@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios y campos</title>
+    </head>
+    <body>
+        <h2>Creando los formularios</h2>
+        <form class = "formulario">
+            <legend>Tus datos</legend>
+            <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="on">
+                <br>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" autocomplete="on">
+                <br>
+                <label>Sexo:</label><br>
+                <input type="radio" name="Sexo" id="sexo" value="Hombre">Hombre<br>
+                <input type="radio" name="Sexo" id="sexo" value="Mujer"> Mujer<br>
+                <input type="radio" name="Sexo" id="sexo" autofocus value="Oto"> Otro<br>
+                <br><br>
+                <label>Fecha de nacimiento</label>
+                <input  type="date" name="fecha">
+                <input type="datetime-local" name="fecha">
+                <br><br>
+                <label>Correo electronico</label>
+                <input type="email" name="mail" placeholder="ejemplo@hotmail.com" required>
+                
+
+                <br><br>
+                <label>Tu sitio web</label>
+                <input type="url" name="Sitio web" placeholder="http://www.ejemplo.com">
+                <br><br>
+                
+                <label>¿Cuanto sabes de HTML?</label>
+                <input type="range" name="rango" min="0" max="10">
+
+                <br><br>
+                <label>Personas que vienen contigo</label>
+                <input type="number" name="cantidad" min="1" max="5">
+                <br>
+
+                <fieldset>
+                    <legend>Usuario y password</legend>
+                    <label for="Uer">Usuario</label>
+                    <input type="text" name="Usuario" placeholder="Usuario" required>
+                    <br>
+                    <label for="pass">password</label>
+                    <input type="password" name="password" placeholder="******" required>
+                </fieldset>
+
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Información sobre tu curso</legend>
+                <label>Turno:</label>
+                <select clase="turno" name="turno">
+                    <option value="Matutino" selected>Matutino</option>
+                    <option value="Vespertino">Vespertino</option>
+                    <option value="Nocturno" >Nocturno</option>
+                </select>
+                <br><br>
+
+                <label>¿Qué curso te gustaria que agregaramos?</label>
+                <input list="propuesta" name="encuensta">
+                <datalist id="propuesta">
+                    <option value="jQuery"></option>
+                    <option value="Java"></option>
+                    <option value="C#"></option>
+                </datalist>
+
+                <br><br>
+                <label>Tus cursos:</label><br>
+                <input type="checkbox" value="php">PHP<br>
+                <input type="checkbox" value="php">Java<br>
+                <input type="checkbox" value="php">CSS<br>
+                <input type="checkbox" value="php">JS<br>
+                <br><br>
+                <label>Fecha en que deseas iniciar curso</label>
+                <input type="month" name="fecha"><br>
+                <input type="time" name="fecha">
+                <input type="week" name="fecha">
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Extra</legend>
+                <label>Las primeras 10 personas reciben una camisa gatis</label>
+                <input type="color" name="color">
+            </fieldset>
+
+
+            <input type="submit" value="Enviar">
+            <br><br>
+            <button type="reset" disabled>Borrar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

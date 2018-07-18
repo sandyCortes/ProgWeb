@@ -1,0 +1,78 @@
+h2 {
+    color: blue;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+/*Selecciona ID*/
+#titulo {
+    color: brown;
+    text-size-adjust: 100px;
+}
+
+/*Seleccionar clases*/
+.contenido-principal {
+    color: blueviolet;
+    text-size-adjust: 100px;
+}
+
+/*Seleccionar clases y ID*/
+#titulo.titulo {
+    font-size: 60px;
+}
+
+/*Selectores con dos clases*/
+.azul.tituloCurso {
+    color: red;
+}
+
+/*Selectores con elementos html*/
+p {
+    color: chartreuse;
+}
+
+img {
+    width: 100px;
+}
+
+/*Selectores con html y ID*/
+h3·hola {
+    color: aqua;
+}
+
+/*Selectores html y clases*/
+h2.clase {
+    color: chocolate;
+}
+
+/*Selector universal*/
+* {
+    color: black;
+}
+
+/*Selector de grupos*/
+h2,p,h3 {
+    text-transform: uppercase;
+}
+
+/*Seleccionar decendintes*/
+nav#navegacion {
+    background-color: orange;
+}
+
+nav#navegacion ul {
+    list-style: none;
+}
+
+nav#navegacion ul li {
+    display: inline;
+}
+
+nav#navegacion ul li a{
+    color: azure;
+}
+
+/*Selector con hijos*/
+section#noticias {
+    border: 1px solid black;
+}
